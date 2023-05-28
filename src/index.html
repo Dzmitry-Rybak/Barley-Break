@@ -5,30 +5,49 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="./img/favicon.png" type="image/png">
+
     <title>Barley Break</title>
 
 </head>
 <body>
     
     <div class="container">
+      <button class="new-game">New Game</button>
+      <div class="state">
+        <div id="step">Steps: 0</div>
+        <div id="time">Time: 00:00</div>
+      </div>
         <div id="board">
-            <div  class="item" id="row1">
-              <button> </button>
-              <button> </button>
-              <button> </button>
-            </div>
-            <div class="item" id="row2" >
-              <button> </button>
-              <button> </button>
-              <button> </button>
-            </div>
-            <div class="item" id="row3" >
-                <button> </button>
-                <button> </button>
-                <button> </button>
-              </div>
+          <div  class="item" id="row1">
+            <button></button>
+            <button></button>
+            <button></button>
           </div>
+          <div class="item" id="row2" >
+            <button></button>
+            <button></button>
+            <button></button>
+          </div>
+          <div class="item" id="row3" >
+              <button></button>
+              <button></button>
+              <button></button>
+          </div>
+      </div>
     </div>
+    <section class="score">
+      <span class="clear__score">&#10006;</span>
+      <div class="score__title">Your score:</div>
+      <ol class="score__items">
+      </ol>
+    </section>
+    <div id="message">
+      <h2>Congratulations, you have won!</h2>
+      <p>You have successfully solved the puzzle.</p>
+      <p>Start New Game</p>
+    </div>
+    
       
     <script src="js/script.js"></script>
 </body>
