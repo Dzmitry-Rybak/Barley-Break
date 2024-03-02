@@ -81,7 +81,8 @@
         let timeIterval;
         
         // clicked New Game
-        document.querySelector('.new-game').addEventListener('click', () => {
+        
+        function handleNewGameClick() {
             clearInterval(timeIterval);
             board = shuffleArray(startArray)
             let secondsCount = 0,
@@ -110,7 +111,7 @@
             step.textContent = 'Steps: 0';
             drawAll()
 
-        })
+        }
 
         // Get the coordinates of the empty element.
         function getEmptyCellCoordinates() {
@@ -222,8 +223,11 @@
         addScoreItem();
 
         // clear localStorage
+
         clearScore.addEventListener('click', () => {
             scoreList.innerHTML = ''
             localStorage.removeItem('listScore');
         });
+
+        document.querySelector('.new-game').addEventListener('click', handleNewGameClick);
 })
