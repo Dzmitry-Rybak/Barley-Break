@@ -118,7 +118,7 @@ button:active {
         right: 20px;
     }
     @media (max-width: 900px) {
-        top:auto;
+        top: initial;
         bottom: 10px;
     }
 }
