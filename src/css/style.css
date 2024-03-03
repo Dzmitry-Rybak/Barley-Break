@@ -19,22 +19,15 @@ body {
 
 .item {
     display: flex;
+    justify-content: center;
 }
 
-#board {
-    width: 33%;
-    background-color: rgb(255, 255, 255);
-    box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 5px;
-    border: 5px solid rgb(255, 255, 255);
-    border-radius: 5px;
-    margin: 0 auto;
-}
 button  {
     cursor: pointer;
-    height: 143px;
+    height: 150px;
     width: 150px;
     margin: 7px;
-    background-color: #cfb853b8;
+    background-color: #fdf8b0;
     font-size: 20px;
     color: #000;
     font-weight: bold;
@@ -42,6 +35,18 @@ button  {
     border-radius: 5px;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
     filter: brightness(90%);
+    @media (max-width: 1200px) {
+        height: 110px;
+        width: 110px;
+    }
+    @media (max-width: 992px) {
+        height: 110px;
+        width: 110px;
+    }
+    @media (max-width: 768px) {
+        height: 90px;
+        width: 90px;
+    }
 }
 
 .new-game {
@@ -90,6 +95,9 @@ button:active {
     width: 33%;
     display: flex;
     justify-content: space-between;
+    @media (max-width: 576px) {
+        width: 100%;
+    }
 }
 
 #step, #time {
@@ -99,13 +107,20 @@ button:active {
 .score {
     position: absolute;
     padding: 12px 20px 12px 20px;
-    top: 118px;
-    right: 200px;
+    top: 90px;
+    right: 50px;
     width: 220px;
     min-height: 100px;
     color: #fff;
     border-radius: 20px;
     background: linear-gradient(45deg, #546d73, #546d73);
+    @media (max-width: 992px) {
+        right: 20px;
+    }
+    @media (max-width: 900px) {
+        top:auto;
+        bottom: 10px;
+    }
 }
 
 .clear__score {

@@ -22,4 +22,4 @@ This project is a simple implementation of the classic Fifteen Puzzle game using
 ## Demo
 <!-- ![Game Demo](https://dzmitry-rybak.github.io/fifteen/src/img/gameprev.png) -->
 
-A live demo of the game is available [https://dzmitry-rybak.github.io/fifteen/].
+A live demo of the game is available [https://barley-break-seven.vercel.app/].
